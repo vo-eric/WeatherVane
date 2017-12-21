@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Chart from '../components/chart';
-import GoogleMap from '../compoments/google_map';
+import GoogleMap from '../components/google_map';
 
 class WeatherList extends Component {
   renderWeather(cityData) {
@@ -32,7 +32,6 @@ class WeatherList extends Component {
             <th>Humidity</th>
           </tr>
         </thead>
-      </table>
 
       <tbody>
         {this.props.weather.map(this.renderWeather)}

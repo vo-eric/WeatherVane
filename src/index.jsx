@@ -7,7 +7,7 @@ import ReduxPromise from 'redux-promise';
 import App from './components/app';
 import reducers from './reducers';
 
-const store = createStore(reducers, applyMiddleWare(ReduxPromise));
+const store = createStore(reducers, applyMiddleware(ReduxPromise));
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
