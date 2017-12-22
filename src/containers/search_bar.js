@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { fetchWeather } from '../actions/index';
 
-export default class SearchBar extends Component {
+class SearchBar extends Component {
   constructor(props) {
     super(props);
 
@@ -16,13 +18,13 @@ export default class SearchBar extends Component {
 
   onFormSubmit(event) {
     event.preventDefault();
-
+    this.props.fetchWeather(this.state.term);
     this.setState({ term: '' });
-
   }
+
   render () {
     return (
-      <form className="city-input">
+      <form onSubmit={this.onFormSubmit} className="city-input">
         <input
           placeholder="Enter a city to get a five day forecast"
           className="city-form"
@@ -40,3 +42,9 @@ export default class SearchBar extends Component {
     );
   }
 }
+
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators({ fetchWeather }, dispatch);
+}
+
+export default connect(null, mapDispatchToProps)(SearchBar);
