@@ -3,7 +3,7 @@ body {
   font-size: 12px;
   font-family: 'Quicksand', sans-serif;
   color: #fffdef;
-    text-shadow: 1px 0 grey, 0 1px grey, 1px 0 grey, 0 1px grey;
+  text-shadow: 1px 0 grey, 0 1px grey, 1px 0 grey, 0 1px grey;
   font-weight: 200px;
   letter-spacing: 2px;
 }
@@ -26,6 +26,7 @@ input {
   font-family: 'Titillium Web', sans-serif;
   letter-spacing: 1px;
   border: 1px solid white;
+  color: grey;
 }
 
 td:first-of-type{
