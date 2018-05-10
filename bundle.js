@@ -23740,7 +23740,7 @@ var WeatherList = function (_Component) {
     value: function renderWeather(cityData) {
       var name = cityData.city.name;
       var temps = cityData.list.map(function (weather) {
-        return weather.main.temp;
+        return weather.main.temp - 275;
       });
       var pressures = cityData.list.map(function (weather) {
         return weather.main.pressure;
@@ -23764,7 +23764,7 @@ var WeatherList = function (_Component) {
         _react2.default.createElement(
           'td',
           null,
-          _react2.default.createElement(_chart2.default, { data: temps, color: 'orange', units: 'K' })
+          _react2.default.createElement(_chart2.default, { data: temps, color: 'orange', units: 'C' })
         ),
         _react2.default.createElement(
           'td',
