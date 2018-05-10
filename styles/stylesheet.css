@@ -1,28 +1,27 @@
 body {
-  background-color: #b6fcf3;
-  font-size: 12px;
+  background-color: #15b82b;
+  font-size: 2rem;
   font-family: 'Quicksand', sans-serif;
-  color: #fffdef;
-  text-shadow: 1px 0 grey, 0 1px grey, 1px 0 grey, 0 1px grey;
-  font-weight: 200px;
+  color: white;
   letter-spacing: 2px;
 }
 
 td {
   font-size: 16px;
-  height: 100px;
-  width: 100px;
+  height: 20%;
+  width: 20%;
   text-align: center;
+  padding: 10px 50px;
 }
 
 input {
   margin-bottom: 20px;
   width: 100%;
-  height: 30px;
+  height: 40px;
   text-align: center;
   border-radius: 5px;
   outline: none;
-  font-size: 16px;
+  font-size: 1rem;
   font-family: 'Titillium Web', sans-serif;
   letter-spacing: 1px;
   border: 1px solid white;
@@ -40,11 +39,42 @@ td:first-of-type, td:first-of-type > div {
 }
 
 th {
-  width: 20%;
+  padding: 0 90px;
+  width: 25%;
   font-size: 20px;
 }
 
 td, th {
   vertical-align: middle !important;
   text-align: center !important;
+}
+
+svg {
+  border: 1px solid rgb(39, 63, 16);
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+section {
+  display: flex;
+  align-items: center;
+}
+
+i {
+  font-size: 2rem;
+  padding: 0 10px;
+  color: white;
+}
+
+.fa-cloud {
+  font-size: 3rem !important;
+}
+
+span {
+  padding-bottom: 5px;
 }
