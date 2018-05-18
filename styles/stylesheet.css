@@ -1,80 +1,87 @@
 body {
-  background-color: #15b82b;
-  font-size: 2rem;
-  font-family: 'Quicksand', sans-serif;
-  color: white;
-  letter-spacing: 2px;
+    background-color: #15b82b;
+    font-size: 2rem;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    letter-spacing: 2px;
 }
 
 td {
-  font-size: 16px;
-  height: 20%;
-  width: 20%;
-  text-align: center;
-  padding: 10px 50px;
+    font-size: 1rem;
+    height: 20%;
+    width: 20%;
+    text-align: center;
+    padding: 20px 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+table {
+    border-collapse: collapse;
 }
 
 input {
-  margin-bottom: 20px;
-  width: 100%;
-  height: 40px;
-  text-align: center;
-  border-radius: 5px;
-  outline: none;
-  font-size: 1rem;
-  font-family: 'Titillium Web', sans-serif;
-  letter-spacing: 1px;
-  border: 1px solid white;
-  color: grey;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+    font-family: 'Titillium Web', sans-serif;
+    letter-spacing: 1px;
+    border: 1px solid white;
+    color: grey;
 }
 
-td:first-of-type{
-  display: flex;
-}
-
-td:first-of-type, td:first-of-type > div {
-  height: 150px;
-  width: 200px;
-  margin: auto;
+td:first-of-type > div {
+    height: 180px;
+    width: 200px;
+    margin: auto;
 }
 
 th {
-  padding: 0 90px;
-  width: 25%;
-  font-size: 20px;
+    padding: 0 90px;
+    width: 25%;
+    font-size: 1.2rem;
 }
 
 td, th {
-  vertical-align: middle !important;
-  text-align: center !important;
+    vertical-align: middle !important;
+    text-align: center !important;
 }
 
 svg {
-  border: 1px solid rgb(39, 63, 16);
+    border: 1px solid rgb(39, 63, 16);
+    height: 180px;
+    width: 200px;
 }
 
-
 header {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
 }
 
 section {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 i {
-  font-size: 2rem;
-  padding: 0 10px;
-  color: white;
+    font-size: 2rem;
+    padding: 0 10px;
+    color: white;
 }
 
 .fa-cloud {
-  font-size: 3rem !important;
+    font-size: 3rem !important;
 }
 
 span {
-  padding-bottom: 5px;
+    padding-bottom: 5px;
+}
+
+p {
+    margin: 0;
+    margin-top: 5px;
 }

@@ -22783,7 +22783,7 @@ var SearchBar = function (_Component) {
         'form',
         { onSubmit: this.onFormSubmit, className: 'city-input' },
         _react2.default.createElement('input', {
-          placeholder: 'Enter a city to get a five day forecast',
+          placeholder: 'Enter a city to get its five day forecast',
           className: 'city-form',
           value: this.state.term,
           onChange: this.onInputChange
@@ -23759,7 +23759,12 @@ var WeatherList = function (_Component) {
         _react2.default.createElement(
           'td',
           null,
-          _react2.default.createElement(_google_map2.default, { lat: lat, lon: lon })
+          _react2.default.createElement(_google_map2.default, { lat: lat, lon: lon }),
+          _react2.default.createElement(
+            'p',
+            null,
+            name
+          )
         ),
         _react2.default.createElement(
           'td',
@@ -23865,7 +23870,7 @@ exports.default = function (props) {
     null,
     _react2.default.createElement(
       _reactSparklines.Sparklines,
-      { height: 120, width: 180, data: props.data },
+      { height: 180, width: 200, data: props.data },
       _react2.default.createElement(_reactSparklines.SparklinesLine, { color: props.color }),
       _react2.default.createElement(_reactSparklines.SparklinesReferenceLine, { type: 'avg' })
     ),
